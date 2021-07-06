@@ -1,0 +1,15 @@
+#spring:
+#  mvc:
+#    static-path-pattern: /static/**
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+#server:
+#  error:
+#    path: /error
+#spring:
+#  mvc:
+#    servlet:
+#      path: /mvc

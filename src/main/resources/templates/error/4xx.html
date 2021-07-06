@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="ThemeBucket">
+  <link rel="shortcut icon" href="#" type="image/png">
+
+  <title>404 Page</title>
+
+  <div th:include="common :: common_head"></div>
+</head>
+
+<body class="error-page">
+
+<section>
+  <div class="container ">
+
+    <section class="error-wrapper text-center">
+      <h2 th:text="${status}">status</h2>
+      <h3 th:text="${message}">message</h3>
+      <a class="back-btn" href="index.html" th:href="@{/main.html}"> Back To Home</a>
+    </section>
+
+  </div>
+</section>
+
+<div th:replace="common :: #common_script"></div>
+
+</body>
+</html>
